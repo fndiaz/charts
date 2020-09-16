@@ -73,10 +73,10 @@ nexus:
     path: /
   # hostAliases allows the modification of the hosts file inside a container
   hostAliases: []
-   - ip: "127.0.0.1"
-     hostnames:
-     - "example.com"
-     - "www.example.com"
+  # - ip: "127.0.0.1"
+  #   hostnames:
+  #   - "example.com"
+  #   - "www.example.com"
   context:
 
 route:

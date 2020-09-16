@@ -238,9 +238,9 @@ secret:
 
 # # To use an additional service, set enable to true
 service:
-  type: ClusterIP
+  type: NodePort
   # name: additional-svc
-  enabled: false
+  enabled: true
   labels: {}
   annotations: {}
   ports:
@@ -261,14 +261,3 @@ additionalConfigMaps: []
 #      strictContentTypeValidation: 'true'
 #      versionPolicy: 'RELEASE'
 #      layoutPolicy: 'STRICT'
-
-service:
-  type: NodePort
-  # name: additional-svc
-  enabled: true
-  labels: {}
-  annotations: {}
-  ports:
-  - name: nexus-service
-    targetPort: 8081
-    port: 8081

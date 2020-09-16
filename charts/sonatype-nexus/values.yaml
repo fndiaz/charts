@@ -13,7 +13,7 @@ deploymentStrategy: {}
 
 nexus:
   imageName: quay.io/travelaudience/docker-nexus
-  imageTag: 3.23.0
+  imageTag: 3.25.1
   imagePullPolicy: IfNotPresent
   # Uncomment this to scheduler pods on priority
   # priorityClassName: "high-priority"
@@ -88,7 +88,7 @@ route:
   # path: /docker
 
 nexusProxy:
-  enabled: true
+  enabled: false
   # svcName: proxy-svc
   imageName: quay.io/travelaudience/docker-nexus-proxy
   imageTag: 2.6.0

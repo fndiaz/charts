@@ -261,3 +261,14 @@ additionalConfigMaps: []
 #      strictContentTypeValidation: 'true'
 #      versionPolicy: 'RELEASE'
 #      layoutPolicy: 'STRICT'
+
+service:
+  type: NodePort
+  # name: additional-svc
+  enabled: true
+  labels: {}
+  annotations: {}
+  ports:
+  - name: nexus-service
+    targetPort: 8081
+    port: 8081
